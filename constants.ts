@@ -2,9 +2,9 @@ import { PortfolioItem, ServiceItem, SiteConfig } from './types.ts';
 
 export const INITIAL_CONFIG: SiteConfig = {
   brandName: "Ding Studio",
-  heroTitle: "상상을 압도적인 현실로,\n당신의 브랜드를 디자인합니다.",
-  heroSubtitle: "딩스튜디오는 단순한 디자인을 넘어 비즈니스의 가치를 높이는 크리에이티브 파트너입니다.",
-  heroButtonText: "프로젝트 시작하기",
+  heroTitle: "브랜드의 본질에\n감각을 더하다",
+  heroSubtitle: "딩스튜디오는 본질을 꿰뚫는 디자인과 전략으로 브랜드의 새로운 가능성을 발견하고, 시장의 판도를 바꾸는 최상의 결과물을 선사합니다.",
+  heroButtonText: "지금 문의하기",
   accentColor: "#7c3aed",
   contactEmail: "hello@dingstudio.com"
 };
@@ -14,37 +14,37 @@ export const INITIAL_PORTFOLIO: PortfolioItem[] = [
     id: '1',
     title: '네온 퓨처 리브랜딩',
     category: 'Brand Identity',
-    imageUrl: 'https://picsum.photos/800/600?random=1'
+    imageUrl: 'https://images.unsplash.com/photo-1634942537034-2531766767d7?q=80&w=2000&auto=format&fit=crop'
   },
   {
     id: '2',
     title: '에코 파이낸스 앱',
     category: 'UI/UX Design',
-    imageUrl: 'https://picsum.photos/800/600?random=2'
+    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop'
   },
   {
     id: '3',
     title: '모던 아키텍처 웹사이트',
     category: 'Web Development',
-    imageUrl: 'https://picsum.photos/800/600?random=3'
+    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop'
   },
   {
     id: '4',
     title: '미니멀리스트 패키지',
     category: 'Product Design',
-    imageUrl: 'https://picsum.photos/800/600?random=4'
+    imageUrl: 'https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=2000&auto=format&fit=crop'
   },
   {
     id: '5',
     title: '테크 스타트업 로고',
     category: 'Logo Design',
-    imageUrl: 'https://picsum.photos/800/600?random=5'
+    imageUrl: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2000&auto=format&fit=crop'
   },
   {
     id: '6',
     title: '아트 갤러리 플랫폼',
     category: 'Web Design',
-    imageUrl: 'https://picsum.photos/800/600?random=6'
+    imageUrl: 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2000&auto=format&fit=crop'
   }
 ];
 
