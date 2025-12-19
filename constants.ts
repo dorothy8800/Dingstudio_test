@@ -1,4 +1,4 @@
-import { PortfolioItem, ServiceItem, SiteConfig } from './types';
+import { PortfolioItem, ServiceItem, SiteConfig } from './types.ts';
 
 export const INITIAL_CONFIG: SiteConfig = {
   brandName: "Ding Studio",

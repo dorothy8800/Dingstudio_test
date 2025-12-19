@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Icons } from './Icons';
-import { SiteConfig } from '../types';
+import { Icons } from './Icons.tsx';
+import { SiteConfig } from '../types.ts';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -44,7 +44,6 @@ export const Layout: React.FC<LayoutProps> = ({ children, config }) => {
 
   return (
     <div className="min-h-screen bg-dark-bg text-gray-100 font-sans selection:bg-brand-600 selection:text-white">
-      {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled || isMobileMenuOpen ? 'bg-dark-bg/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
@@ -61,7 +60,6 @@ export const Layout: React.FC<LayoutProps> = ({ children, config }) => {
             {config.brandName}
           </Link>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {!isAdmin && navLinks.map((link) => (
               <button
@@ -92,7 +90,6 @@ export const Layout: React.FC<LayoutProps> = ({ children, config }) => {
             )}
           </div>
 
-          {/* Mobile Menu Button */}
           <button 
             className="md:hidden text-gray-300 hover:text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -101,7 +98,6 @@ export const Layout: React.FC<LayoutProps> = ({ children, config }) => {
           </button>
         </div>
 
-        {/* Mobile Nav */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-20 left-0 right-0 bg-dark-surface border-b border-white/10 p-6 flex flex-col gap-4">
              {!isAdmin && navLinks.map((link) => (
@@ -128,7 +124,6 @@ export const Layout: React.FC<LayoutProps> = ({ children, config }) => {
         {children}
       </main>
 
-      {/* Footer */}
       {!isAdmin && (
         <footer className="bg-dark-surface border-t border-white/5 py-12">
           <div className="max-w-7xl mx-auto px-6">

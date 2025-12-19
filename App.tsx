@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { Layout } from './components/Layout';
-import { Home } from './components/Home';
-import { AdminDashboard } from './components/AdminDashboard';
-import { INITIAL_CONFIG, INITIAL_PORTFOLIO } from './constants';
-import { SiteConfig, PortfolioItem } from './types';
+import { Layout } from './components/Layout.tsx';
+import { Home } from './components/Home.tsx';
+import { AdminDashboard } from './components/AdminDashboard.tsx';
+import { INITIAL_CONFIG, INITIAL_PORTFOLIO } from './constants.ts';
+import { SiteConfig, PortfolioItem } from './types.ts';
 
 const App: React.FC = () => {
-  // Global State for the Application
-  // In a larger app, this would be in Context or Redux
   const [config, setConfig] = useState<SiteConfig>(INITIAL_CONFIG);
   const [portfolioItems, setPortfolioItems] = useState<PortfolioItem[]>(INITIAL_PORTFOLIO);
 
-  // Update document title and primary color variable when config changes
   useEffect(() => {
     document.title = `${config.brandName} | Creative Studio`;
-    // We could dynamically set CSS variables here if needed
   }, [config]);
 
   return (
